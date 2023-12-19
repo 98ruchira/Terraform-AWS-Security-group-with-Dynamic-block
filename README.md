@@ -15,11 +15,10 @@ This Terraform script for bulid AWS security group with open multiple ports usin
 
 ## Update the values in the `variable.tf` file according to your requirements:
 ...
-variable "sg_ports" {
+variable "sg_ports" 
 description = "List of ports for ingress rules"
 type        = list(number)
 default = [ 22, 80, 8200, 8300, 9200 ]
-}
 ...
 
 ## Run the following command to initialize Terraform and download the necessary providers:
